@@ -400,7 +400,7 @@ header.sticky{
 }
 
 .layer p{
-    color: var(--second-color);
+    color: #1d1f21;
     font-size: var(--p-small-font);
     line-height: 1.8;
 }
