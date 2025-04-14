@@ -679,3 +679,7 @@ header.sticky{
         color: #e4ab32;
     }
 }
+
+.toggle-theme{
+    cursor: pointer;
+}
