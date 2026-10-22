@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel Piske</title>
+    <meta
+      name="description"
+      content="Gabriel Schweder Piske — Docente de Eletrônica e Tecnologia no SENAI/SC, Monitor Acadêmico no UniSENAI e Desenvolvedor de Sistemas Educacionais, IoT e Backend Java."
+    />
+    <title>Gabriel Piske — Docência, Sistemas Educacionais & Backend</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -13,439 +18,780 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="main-header">
-      <a href="#" class="logo"><span>G</span>abriel Piske</a>
+    <header class="main-header" id="header">
+      <div class="header-inner container">
+        <a href="#home" class="logo">Gabriel Piske</a>
 
-      <nav class="nav-container">
-        <ul class="navlist">
-          <li><a href="#home" class="active">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#education">Formação</a></li>
-          <li><a href="#experience">Experiência</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#stack">Stack</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="nav-container" id="nav-container" aria-label="Navegação principal">
+          <ul class="navlist">
+            <li><a href="#home" class="active">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Sistemas &amp; Projetos</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#education">Formação &amp; Pesquisa</a></li>
+            <li><a href="#stack">Tecnologias</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            id="theme-toggle"
+            class="icon-btn"
+            aria-label="Alternar tema claro ou escuro"
+            title="Alternar tema"
+          >
+            <i class="bx bx-moon"></i>
+          </button>
+          <button
+            type="button"
+            id="menu-icon"
+            class="icon-btn menu-toggle"
+            aria-label="Abrir menu"
+          >
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero-section" id="home">
-        <div class="hero-content">
-          <div class="badge">Tecnologia &bull; Educação &bull; Eletrônica</div>
-          <h1>Gabriel Piske</h1>
-          <h2>Docente de Eletrônica & Desenvolvedor Backend</h2>
-          <p class="hero-summary">
-            Desenvolvedor backend, docente e entusiasta de tecnologia, atuando
-            com software, ensino técnico, IoT e integração de sistemas.
-          </p>
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">SENAI / UniSENAI &middot; Santa Catarina</p>
+            <h1>Gabriel Piske</h1>
+            <h2 class="hero-subtitle">
+              Docente de Eletrônica e Tecnologia &amp; Desenvolvedor de Sistemas
+            </h2>
 
-          <div class="hero-objectives">
-            <strong>Objetivo Profissional:</strong> Desenvolver soluções
-            modernas com Java e contribuir para a formação de novos
-            profissionais em tecnologia.
-          </div>
-          <div class="hero-actions">
-            <a
-              href="https://api.whatsapp.com/send/?phone=5547999382047"
-              target="_blank"
-              class="cta-primary"
-            >
-              <i class="bx bx-paper-plane"></i> Fale Comigo
-            </a>
-            <a href="#projects" class="cta-secondary">Ver Projetos</a>
-          </div>
-          <div class="social-links">
-            <a
-              href="https://www.linkedin.com/in/gabriel-piske/"
-              target="_blank"
-              title="LinkedIn"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/gabrielpiske"
-              target="_blank"
-              title="GitHub"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="mailto:gabriel.piske07@gmail.com" title="Email"
-              ><i class="bx bx-envelope"></i
-            ></a>
-          </div>
-        </div>
-      </section>
+            <p class="hero-description">
+              Atuo na interseção entre o ensino técnico, a engenharia de software e a automação.
+              Desenvolvo <strong>plataformas educacionais interativas</strong> integradas a bancadas
+              físicas de laboratório (IoT, Web Serial, Arduino e CLPs), além de aplicações
+              <strong>backend com Java e Spring Boot</strong>.
+            </p>
 
-      <section class="about-section" id="about">
-        <div class="section-grid">
-          <div class="about-visual">
-            <div class="img-wrapper">
-              <img
-                src="img/piske_teds.png"
-                alt="Gabriel Piske em ambiente técnico"
-              />
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">Ver Sistemas e Projetos</a>
+              <a
+                href="https://lattes.cnpq.br/8732342640688124"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+              >
+                <i class="bx bx-file"></i> Currículo Lattes
+              </a>
+            </div>
+
+            <div class="hero-links">
+              <a
+                href="https://github.com/gabrielpiske"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gabriel-piske/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bx bxl-linkedin"></i> LinkedIn
+              </a>
+              <a
+                href="https://lattes.cnpq.br/8732342640688124"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bx bxs-graduation"></i> Lattes CNPq
+              </a>
+              <a href="mailto:gabriel.piske07@gmail.com">
+                <i class="bx bx-envelope"></i> E-mail
+              </a>
             </div>
           </div>
 
-          <div class="about-text">
-            <span class="section-subtitle">Minha Trajetória</span>
+          <figure class="hero-figure">
+            <div class="image-frame">
+              <img
+                src="img/piske_teds.png"
+                alt="Gabriel Piske em apresentação no TEDs SENAI FIESC"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
 
-            <h3 class="section-title">
-              Tecnologia, ensino e desenvolvimento conectados
+      <!-- SOBRE -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <figure class="about-figure">
+            <div class="image-frame">
+              <img
+                src="img/piske_bancada.jpg"
+                alt="Gabriel Piske atuando no laboratório SENAI+Digital"
+                loading="lazy"
+              />
+            </div>
+          </figure>
+
+          <div class="about-content">
+            <span class="section-label">Trajetória e Atuação</span>
+            <h3 class="section-heading">
+              Conectando sala de aula, laboratório prático e engenharia de software
             </h3>
 
             <p>
-              Atuo como docente no SENAI e desenvolvedor backend, unindo ensino
-              técnico, software e tecnologia aplicada no dia a dia.
+              Como docente no <strong>SENAI/SC</strong> e graduando em Análise e Desenvolvimento de
+              Sistemas no <strong>UniSENAI</strong>, busco aproximar a teoria da prática industrial
+              por meio da tecnologia.
             </p>
-
             <p>
-              Meu foco está na construção de aplicações com Java e Spring Boot,
-              além do desenvolvimento de projetos envolvendo integração de
-              sistemas, IoT e educação tecnológica.
+              No cotidiano de laboratório, percebi a necessidade de ferramentas que tornassem
+              conceitos de eletrônica, acionamentos elétricos e telemetria mais visuais para os
+              estudantes. Isso me levou a projetar diversos <strong>sistemas educacionais e
+              supervisórios web</strong> que conectam o navegador diretamente a microcontroladores,
+              sensores e bancadas didáticas em tempo real.
+            </p>
+            <p>
+              Paralelamente, mantenho foco sólido na arquitetura de software backend com
+              <strong>Java e Spring Boot</strong>, modelagem de bancos de dados e segurança de APIs.
             </p>
 
-            <div class="competencies-box">
-              <h4>Principais Interesses:</h4>
+          </div>
+        </div>
+      </section>
 
-              <div class="tags-container">
-                <span class="tag-item">Java & Spring Boot</span>
-                <span class="tag-item">APIs REST</span>
-                <span class="tag-item">IoT</span>
-                <span class="tag-item">Integração de Sistemas</span>
-                <span class="tag-item">Metodologias Ativas</span>
-              </div>
+      <!-- PROJETOS E SISTEMAS EDUCACIONAIS -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <span class="section-label">Produção Técnica</span>
+              <h3 class="section-heading">Sistemas Educacionais, IoT &amp; Software</h3>
+            </div>
+
+            <div class="filter-bar" id="project-filters" role="tablist">
+              <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+              <button type="button" class="filter-btn" data-filter="educacional">
+                Sistemas Educacionais
+              </button>
+              <button type="button" class="filter-btn" data-filter="iot">
+                IoT &amp; Automação
+              </button>
+              <button type="button" class="filter-btn" data-filter="backend">
+                Backend &amp; Web
+              </button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="education-section" id="education">
-        <div class="container-center">
-          <span class="section-subtitle">Linha do Tempo</span>
-          <h3 class="section-title">Formação Acadêmica</h3>
-
-          <div class="academic-grid">
-            <article class="academic-card">
-              <div class="academic-badge">Graduação</div>
-              <h4>Análise e Desenvolvimento de Sistemas</h4>
-              <p class="institution">Centro Universitário UniSENAI</p>
-              <span class="date">Em andamento</span>
-              <p class="description">
-                Foco em engenharia de requisitos, arquitetura de software,
-                estruturas de dados e modelagem de soluções de software
-                corporativas.
-              </p>
-            </article>
-
-            <article class="academic-card">
-              <div class="academic-badge">Técnico</div>
-              <h4>Técnico em Desenvolvimento de Sistemas</h4>
-              <p class="institution">SENAI</p>
-              <span class="date">Concluído</span>
-              <p class="description">
-                Formação sólida em lógica de programação, orientação a objetos,
-                banco de dados relacional e desenvolvimento de aplicações web
-                completas.
-              </p>
-            </article>
-
-            <article class="academic-card">
-              <div class="academic-badge">Qualificações</div>
-              <h4>Formações Industriais Continuadas</h4>
-              <p class="institution">SENAI / Parceiros</p>
-              <span class="date">2023 - 2025</span>
-              <p class="description">
-                Ciclo especializado englobando certificações em Programador de
-                Sistemas, Assistente Técnico de TI e Eletricista Industrial.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience-section" id="experience">
-        <div class="container-center">
-          <span class="section-subtitle">Trajetória</span>
-          <h3 class="section-title">Experiência Profissional</h3>
-
-          <div class="timeline-wrapper">
-            <article class="timeline-item" data-category="educacao">
-              <div class="timeline-marker"></div>
-
-              <div class="timeline-card">
-                <span class="time-tag"> jan 2026 - Presente</span>
-
-                <h4>Docente de Eletrônica</h4>
-
-                <span class="company">SENAI/SC</span>
-
-                <p class="job-desc">
-                  Docente de Eletrônica, IoT e tecnologia, atuando com ensino
-                  técnico, atividades práticas em laboratório, gamificação e
-                  desenvolvimento de projetos voltados à formação tecnológica
-                  dos alunos.
-                </p>
-
-                <div class="used-techs">
-                  <span>Eletrônica</span>
-                  <span>IoT</span>
-                  <span>Gamificação</span>
-                  <span>Docência</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item" data-category="educacao">
-              <div class="timeline-marker"></div>
-
-              <div class="timeline-card">
-                <span class="time-tag">fev 2026 - jul 2026</span>
-
-                <h4>Monitor de Algoritmos e Lógica de Programação</h4>
-
-                <span class="company">UniSENAI Santa Catarina</span>
-
-                <p class="job-desc">
-                  Apoio acadêmico em conteúdos de algoritmos e lógica de
-                  programação, auxiliando estudantes no desenvolvimento do
-                  pensamento computacional e resolução de problemas.
-                </p>
-
-                <div class="used-techs">
-                  <span>Algoritmos</span>
-                  <span>Lógica de Programação</span>
-                  <span>Mentoria</span>
-                  <span>Comunicação</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item" data-category="desenvolvimento">
-              <div class="timeline-marker"></div>
-
-              <div class="timeline-card">
-                <span class="time-tag">2023 - 2025</span>
-
-                <h4>Jovem Aprendiz</h4>
-
-                <span class="company">LINSHALM Implementos Rodoviários</span>
-
-                <p class="job-desc">
-                  Formação técnica com foco em eletrônica, desenvolvimento de
-                  sistemas e tecnologia da informação, envolvendo projetos com
-                  Java, Spring Boot, SQL, aplicações web e fundamentos de
-                  hardware e redes.
-                </p>
-
-                <div class="used-techs">
-                  <span>Java</span>
-                  <span>Spring Boot</span>
-                  <span>SQL</span>
-                  <span>Desenvolvimento Web</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects-section" id="projects">
-        <div class="container-center">
-          <span class="section-subtitle">Portfólio</span>
-
-          <h3 class="section-title">Projetos Desenvolvidos</h3>
 
           <div class="projects-grid">
-            <article class="project-card" data-category="iot educacao">
-              <div class="project-image-placeholder">
-                <i class="bx bx-broadcast"></i>
+            <!-- 1. SmartMotion -->
+            <article class="project-card" data-category="educacional iot">
+              <div class="project-top">
+                <span class="project-type">Plataforma Educacional &middot; SENAI</span>
+                <div class="project-links-top">
+                  <a
+                    href="https://github.com/gabrielpiske/SmartMotion"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
+                  >
+                    <i class="bx bxl-github"></i> Código
+                  </a>
+                  <a
+                    href="https://smart-motion-senai.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Acessar plataforma"
+                  >
+                    <i class="bx bx-link-external"></i> Demo
+                  </a>
+                </div>
               </div>
 
-              <div class="project-info">
-                <span class="proj-category">IoT / Sistemas Industriais</span>
+              <h4>SmartMotion</h4>
+              <p>
+                Plataforma educacional integrada para controle multivelocidade de motor trifásico,
+                inversor de frequência e IoT industrial, desenvolvida para aulas práticas de
+                Eletrônica de Potência no SENAI Timbó.
+              </p>
 
-                <h4>Bancada Smart 4.0</h4>
+              <ul class="tech-list">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Firebase Realtime</li>
+                <li>Arduino C++</li>
+                <li>IoT Industrial</li>
+              </ul>
+            </article>
 
-                <p>
-                  Sistema desenvolvido para supervisão e gerenciamento de uma
-                  linha de produção simulada, com monitoramento em tempo real,
-                  integração com CLPs Siemens e interface web para controle das
-                  estações industriais.
-                </p>
-
-                <div class="project-tags">
-                  <span>Java</span>
-                  <span>Spring Boot</span>
-                  <span>IoT</span>
-                  <span>CLP Siemens</span>
+            <!-- 2. Motor-Link -->
+            <article class="project-card" data-category="educacional iot">
+              <div class="project-top">
+                <span class="project-type">Plataforma Didática &middot; Potência</span>
+                <div class="project-links-top">
+                  <a
+                    href="https://github.com/gabrielpiske/motor-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
+                  >
+                    <i class="bx bxl-github"></i> Código
+                  </a>
+                  <a
+                    href="https://motor-link.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Acessar plataforma"
+                  >
+                    <i class="bx bx-link-external"></i> Demo
+                  </a>
                 </div>
+              </div>
 
-                <div class="project-links">
+              <h4>Motor-Link</h4>
+              <p>
+                Ambiente interativo de acionamento elétrico de potência e supervisão didática,
+                conectando hardware via Web Serial API e sincronização em nuvem para a unidade
+                curricular de Eletrônica de Potência e Comandos Elétricos.
+              </p>
+
+              <ul class="tech-list">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Web Serial API</li>
+                <li>Firebase</li>
+                <li>Arduino</li>
+              </ul>
+            </article>
+
+            <!-- 3. Bancada Smart 4.0 -->
+            <article class="project-card" data-category="iot backend educacional">
+              <div class="project-top">
+                <span class="project-type">Supervisório Industrial 4.0</span>
+                <div class="project-links-top">
                   <a
                     href="https://github.com/gabrielpiske/bancada-smart"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
                   >
-                    <i class="bx bxl-github"></i> Repositório
+                    <i class="bx bxl-github"></i> Código
                   </a>
                 </div>
               </div>
+
+              <h4>Bancada Smart 4.0</h4>
+              <p>
+                Sistema de supervisão e gerenciamento de uma linha de produção didática, com
+                monitoramento em tempo real, integração com CLPs Siemens e interface web para
+                controle das estações industriais.
+              </p>
+
+              <ul class="tech-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>CLP Siemens</li>
+                <li>IoT</li>
+              </ul>
             </article>
 
-            <article class="project-card" data-category="web educacao">
-              <div class="project-image-placeholder">
-                <i class="bx bx-calculator"></i>
+            <!-- 4. Reverse-Motor (K1/K2) -->
+            <article class="project-card" data-category="educacional iot">
+              <div class="project-top">
+                <span class="project-type">IHM de Laboratório</span>
+                <div class="project-links-top">
+                  <a
+                    href="https://github.com/gabrielpiske/reverse-motor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
+                  >
+                    <i class="bx bxl-github"></i> Código
+                  </a>
+                  <a
+                    href="https://reverse-motor.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Acessar aplicação"
+                  >
+                    <i class="bx bx-link-external"></i> Demo
+                  </a>
+                </div>
               </div>
 
-              <div class="project-info">
-                <span class="proj-category">Aplicação Web</span>
+              <h4>Reverse-Motor - IHM</h4>
+              <p>
+                IHM web e firmware Arduino para partida e reversão segura de motor trifásico com
+                intertravamento físico/lógico em 12 bancadas didáticas, permitindo controle pelo
+                celular do aluno via QR Code individual por bancada.
+              </p>
 
-                <h4>Dimensionamento de Eletrodutos</h4>
+              <ul class="tech-list">
+                <li>TypeScript</li>
+                <li>Web Serial API</li>
+                <li>Firebase</li>
+                <li>Arduino</li>
+                <li>QR Code IHM</li>
+              </ul>
+            </article>
 
-                <p>
-                  Aplicação desenvolvida para auxiliar estudantes e
-                  profissionais no cálculo e dimensionamento de eletrodutos.
-                </p>
-
-                <div class="project-tags">
-                  <span>JavaScript</span>
-                  <span>HTML/CSS</span>
-                  <span>Elétrica</span>
+            <!-- 5. LabTrack (gestao-lab) -->
+            <article class="project-card" data-category="educacional backend">
+              <div class="project-top">
+                <span class="project-type">Gestão de Laboratório Didático</span>
+                <div class="project-links-top">
+                  <a
+                    href="https://github.com/gabrielpiske/gestao-lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
+                  >
+                    <i class="bx bxl-github"></i> Código
+                  </a>
                 </div>
+              </div>
 
-                <div class="project-links">
+              <h4>LabTrack — Gestão de Laboratórios</h4>
+              <p>
+                Sistema para gerenciamento completo de inventário de componentes eletrônicos,
+                empréstimos de ferramentas e montagem expressa de kits para aulas práticas de
+                laboratório.
+              </p>
+
+              <ul class="tech-list">
+                <li>JavaScript (ES Modules)</li>
+                <li>Firebase Firestore</li>
+                <li>Bootstrap 5</li>
+                <li>Gestão Escolar</li>
+              </ul>
+            </article>
+
+            <!-- 7. Dimensionamento de Eletrodutos -->
+            <article class="project-card" data-category="educacional backend">
+              <div class="project-top">
+                <span class="project-type">Ferramenta de Engenharia</span>
+                <div class="project-links-top">
+                  <a
+                    href="https://github.com/gabrielpiske/conduit-manager"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
+                  >
+                    <i class="bx bxl-github"></i> Código
+                  </a>
                   <a
                     href="https://gabrielpiske.github.io/conduit-manager/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    title="Acessar calculadora"
                   >
-                    <i class="bx bx-link-external"></i> Acessar App
+                    <i class="bx bx-link-external"></i> App
                   </a>
                 </div>
               </div>
+
+              <h4>Dimensionamento de Eletrodutos</h4>
+              <p>
+                Calculadora técnica web projetada para auxiliar estudantes e profissionais de
+                elétrica no dimensionamento normativo de eletrodutos e taxa de ocupação de
+                condutores.
+              </p>
+
+              <ul class="tech-list">
+                <li>JavaScript</li>
+                <li>HTML / CSS</li>
+                <li>Instalações Elétricas</li>
+              </ul>
             </article>
 
-            <article class="project-card" data-category="web">
-              <div class="project-info">
-                <span class="proj-category">Segurança</span>
-
-                <h4>API Login Security</h4>
-
-                <p>
-                  API de autenticação utilizando Spring Security e JWT para
-                  controle de acesso e autenticação segura.
-                </p>
-
-                <div class="project-tags">
-                  <span>Java</span>
-                  <span>Spring Security</span>
-                  <span>JWT</span>
-                </div>
-
-                <div class="project-links">
+            <!-- 8. API Login Security -->
+            <article class="project-card" data-category="backend">
+              <div class="project-top">
+                <span class="project-type">Arquitetura Backend &middot; Segurança</span>
+                <div class="project-links-top">
                   <a
                     href="https://github.com/gabrielpiske/spring-security"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
                   >
-                    <i class="bx bxl-github"></i> Repositório
+                    <i class="bx bxl-github"></i> Código
                   </a>
                 </div>
+              </div>
+
+              <h4>API Login Security</h4>
+              <p>
+                API REST para autenticação e controle de acesso stateless utilizando Java, Spring
+                Boot, Spring Security e tokens JWT para proteção de rotas e autorização.
+              </p>
+
+              <ul class="tech-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>JWT</li>
+              </ul>
+            </article>
+
+            <!-- 9. Repositório de Aulas & Materiais SENAI -->
+            <article class="project-card" data-category="educacional backend">
+              <div class="project-top">
+                <span class="project-type">Acervo Didático Aberto</span>
+                <div class="project-links-top">
+                  <a
+                    href="https://github.com/gabrielpiske/Senai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Repositório no GitHub"
+                  >
+                    <i class="bx bxl-github"></i> Acervo
+                  </a>
+                </div>
+              </div>
+
+              <h4>Materiais e Práticas — Cursos SENAI</h4>
+              <p>
+                Repositório estruturado reunindo códigos-fonte, atividades práticas e projetos
+                desenvolvidos ao longo das formações em Desenvolvimento de Sistemas, Programação
+                Java/SQL e Eletricista Industrial.
+              </p>
+
+              <ul class="tech-list">
+                <li>Java</li>
+                <li>POO</li>
+                <li>SQL</li>
+                <li>Automação &amp; Ladder</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIÊNCIA PROFISSIONAL -->
+      <section class="section" id="experience">
+        <div class="container">
+          <span class="section-label">Carreira</span>
+          <h3 class="section-heading">Experiência Profissional e Acadêmica</h3>
+
+          <div class="experience-list">
+            <article class="exp-row">
+              <div class="exp-meta">
+                <span class="exp-date">Jan 2026 &mdash; Presente</span>
+                <span class="exp-org">SENAI / SC</span>
+              </div>
+              <div class="exp-body">
+                <h4>Docente de Eletrônica e Tecnologia</h4>
+                <p>
+                  Atuação no ensino técnico em unidades curriculares de Eletrônica, IoT, Comandos
+                  Elétricos e Tecnologia da Informação. Condução de aulas práticas em laboratório,
+                  desenvolvimento de plataformas didáticas interativas, gamificação e orientação de
+                  projetos integradores.
+                </p>
+                <ul class="tech-list">
+                  <li>Docência Técnica</li>
+                  <li>Gamificação</li>
+                  <li>Eletrônica</li>
+                  <li>IoT</li>
+                  <li>Laboratórios Didáticos</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="exp-row">
+              <div class="exp-meta">
+                <span class="exp-date">Fev 2026 &mdash; Jul 2026</span>
+                <span class="exp-org">Centro Universitário UniSENAI SC</span>
+              </div>
+              <div class="exp-body">
+                <h4>Monitor de Algoritmos e Lógica de Programação</h4>
+                <p>
+                  Apoio acadêmico no ensino superior em conteúdos de algoritmos e lógica de
+                  programação, auxiliando estudantes no desenvolvimento do pensamento computacional,
+                  abstração e resolução estruturada de problemas.
+                </p>
+                <ul class="tech-list">
+                  <li>Algoritmos</li>
+                  <li>Lógica de Programação</li>
+                  <li>Mentoria Acadêmica</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="exp-row">
+              <div class="exp-meta">
+                <span class="exp-date">2023 &mdash; 2025</span>
+                <span class="exp-org">LINSHALM Implementos Rodoviários</span>
+              </div>
+              <div class="exp-body">
+                <h4>Jovem Aprendiz — Sistemas, TI e Eletrônica</h4>
+                <p>
+                  Formação prática com foco em eletrônica industrial, desenvolvimento de sistemas e
+                  tecnologia da informação, envolvendo projetos com Java, Spring Boot, SQL,
+                  aplicações web e suporte a infraestrutura de hardware e redes.
+                </p>
+                <ul class="tech-list">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>SQL</li>
+                  <li>Eletricidade Industrial</li>
+                </ul>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="stack-section" id="stack">
-        <div class="container-center">
-          <span class="section-subtitle">Ecossistema Ferramental</span>
-          <h3 class="section-title">Stack Tecnológica</h3>
+      <!-- FORMAÇÃO ACADÊMICA E PRODUÇÃO CIENTÍFICA -->
+      <section class="section section-alt" id="education">
+        <div class="container">
+          <div class="edu-pub-layout">
+            <!-- Coluna 1: Formação -->
+            <div>
+              <span class="section-label">Educação Formal</span>
+              <h3 class="section-heading">Formação Acadêmica</h3>
+
+              <div class="edu-list">
+                <article class="edu-item">
+                  <div class="edu-header">
+                    <h4>Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
+                    <span class="edu-status">Em andamento</span>
+                  </div>
+                  <p class="edu-inst">Centro Universitário UniSENAI</p>
+                  <p class="edu-desc">
+                    Engenharia de requisitos, arquitetura de software, estruturas de dados e
+                    desenvolvimento de sistemas corporativos.
+                  </p>
+                </article>
+
+                <article class="edu-item">
+                  <div class="edu-header">
+                    <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                    <span class="edu-status">Concluído (1200h)</span>
+                  </div>
+                  <p class="edu-inst">SENAI Santa Catarina</p>
+                  <p class="edu-desc">
+                    Programação orientada a objetos com Java, modelagem de bancos de dados
+                    relacionais (SQL) e desenvolvimento de aplicações web completas.
+                  </p>
+                </article>
+
+                <article class="edu-item">
+                  <div class="edu-header">
+                    <h4>Aprendizagens Industriais e Qualificações</h4>
+                    <span class="edu-status">2023 &mdash; 2025</span>
+                  </div>
+                  <p class="edu-inst">SENAI Santa Catarina</p>
+                  <p class="edu-desc">
+                    Formações sequenciais em <strong>Eletricista Industrial</strong> (2025),
+                    <strong>Programador de Sistemas da Informação</strong> (2024) e
+                    <strong>Assistente Técnico em TI</strong> (2023).
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <!-- Coluna 2: Produção Acadêmica & Pesquisa -->
+            <div>
+              <span class="section-label">Pesquisa &amp; Extensão</span>
+              <h3 class="section-heading">Produção Científica e Eventos</h3>
+
+              <div class="pub-list">
+                <article class="pub-item">
+                  <span class="pub-meta">Artigo / Pôster Científico &middot; IV SIMPEX (2026)</span>
+                  <h4>
+                    Inteligência Artificial nas Metodologias Ativas: Reprodutivismo e
+                    Intencionalidade
+                  </h4>
+                  <p class="pub-authors">
+                    <strong>Autores:</strong> Gustavo Garcia de Amo; Gabriel Schweder Piske.
+                  </p>
+                  <p class="pub-desc">
+                    Pesquisa na área temática de <em>Tendências Metodológicas para o Ensino
+                    Superior</em>, investigando como a Inteligência Artificial tem sido integrada às
+                    metodologias ativas e contrapondo o uso mecânico/reprodutivista à
+                    intencionalidade pedagógica crítica e formativa.
+                  </p>
+                </article>
+
+                <article class="pub-item">
+                  <span class="pub-meta">Comunicação &amp; Inovação &middot; SENAI / FIESC</span>
+                  <h4>TEDs SENAI &amp; Mundo SENAI</h4>
+                  <p class="pub-desc">
+                    Prática Pedagógica reconhecida pelo <strong>TEDS - Práticas Pedagógicas que Geram Impacto</strong>,
+                    onde compartilhei uma metodologia ativa no ensino de Grandezas Elétricas na Unidade Curricular de Eletricidade.
+                  </p>
+                </article>
+
+                <div class="lattes-callout">
+                  <div>
+                    <strong>Currículo Lattes (CNPq)</strong>
+                    <p>Acesse o registro completo de produção acadêmica, formação e atuação.</p>
+                  </div>
+                  <a
+                    href="https://lattes.cnpq.br/8732342640688124"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-secondary"
+                  >
+                    Acessar Lattes <i class="bx bx-up-arrow-alt rotate-45"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STACK TECNOLÓGICA -->
+      <section class="section" id="stack">
+        <div class="container">
+          <span class="section-label">Competências Técnicas</span>
+          <h3 class="section-heading">Stack Tecnológica</h3>
 
           <div class="stack-grid">
-            <div class="stack-group">
-              <h5><i class="bx bx-code-block"></i> Backend & Arquitetura</h5>
+            <div class="stack-col">
+              <h4>Backend &amp; Arquitetura</h4>
               <ul>
-                <li>Java & Spring Boot</li>
-                <li>Spring Security / OAuth2 / JWT</li>
-                <li>APIs RESTful</li>
-                <li>Docker</li>
+                <li>Java (POO, Streams, Swing, Web)</li>
+                <li>Spring Boot &amp; Spring MVC</li>
+                <li>Spring Security, OAuth2 &amp; JWT</li>
+                <li>APIs RESTful &amp; Microsserviços</li>
+                <li>Hibernate / JPA &amp; Maven</li>
               </ul>
             </div>
 
-            <div class="stack-group">
-              <h5><i class="bx bx-data"></i> Armazenamento de Dados</h5>
+            <div class="stack-col">
+              <h4>Sistemas Web &amp; Educacionais</h4>
               <ul>
-                <li>MySQL / SQL Server / MongoDB</li>
-                <li>Modelagem e Otimização de queries</li>
-                <li>Hibernate / JPA</li>
+                <li>TypeScript &amp; JavaScript (ES6+)</li>
+                <li>Next.js &amp; React</li>
+                <li>Web Serial API (Comunicação USB/UART)</li>
+                <li>HTML5, CSS3, Tailwind CSS &amp; Bootstrap</li>
+                <li>Interfaces Homem-Máquina (IHM Web)</li>
               </ul>
             </div>
 
-            <div class="stack-group">
-              <h5><i class="bx bx-chip"></i> IoT & Sistemas Integrados</h5>
-
+            <div class="stack-col">
+              <h4>IoT, Hardware &amp; Automação</h4>
               <ul>
-                <li>Internet das Coisas (IoT)</li>
-                <li>ESP32 e Arduino</li>
-                <li>Integração entre Hardware e Software</li>
-                <li>Sensores e Monitoramento em Tempo Real</li>
+                <li>Arduino (C/C++) &amp; ESP32</li>
+                <li>Integração com CLPs Siemens</li>
+                <li>Comandos Elétricos &amp; Inversores</li>
+                <li>Sensores, Relés e Telemetria</li>
+                <li>Indústria 4.0 &amp; Bancadas Didáticas</li>
               </ul>
             </div>
 
-            <div class="stack-group">
-              <h5><i class="bx bx-book-open"></i> Educação & Tecnologia</h5>
-
+            <div class="stack-col">
+              <h4>Dados, Cloud &amp; Ferramentas</h4>
               <ul>
-                <li>Metodologias Ativas</li>
-                <li>Gamificação no Ensino Técnico</li>
-                <li>Mentoria em Programação</li>
-                <li>Projetos Práticos e Aprendizagem Tecnológica</li>
+                <li>PostgreSQL, MySQL &amp; SQL Server</li>
+                <li>Firebase (Realtime DB &amp; Firestore)</li>
+                <li>MongoDB</li>
+                <li>Docker, Git, GitHub &amp; Vercel</li>
+                <li>Google Cloud Platform (GCP)</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact-section" id="contact">
-        <div class="section-grid">
-          <div class="contact-info-panel">
-            <span class="section-subtitle">Canais Diretos</span>
-            <h3 class="section-title">Vamos Construir Algo Juntos?</h3>
+      <!-- CONTATO -->
+      <section class="section section-alt" id="contact">
+        <div class="container contact-layout">
+          <div class="contact-intro">
+            <span class="section-label">Contato</span>
+            <h3 class="section-heading">Vamos conversar?</h3>
             <p>
-              Sinta-se à vontade para entrar em contato para propostas de
-              consultoria, aulas, palestras ou desenvolvimento de software
-              especializado.
+              Disponível para oportunidades e parcerias em docência, desenvolvimento de sistemas
+              educacionais, projetos de pesquisa aplicada (IoT / Indústria 4.0) e engenharia de
+              software backend.
             </p>
+            <p class="contact-location">
+              <i class="bx bx-map"></i> Timbó &mdash; Santa Catarina, Brasil
+            </p>
+          </div>
 
-            <div class="contact-details">
-              <div class="c-item">
-                <i class="bx bx-envelope"></i>
-                <span>gabriel.piske07@gmail.com</span>
+          <div class="contact-links-box">
+            <div class="contact-row">
+              <div>
+                <span class="contact-type">E-mail</span>
+                <a href="mailto:gabriel.piske07@gmail.com" id="email-text" class="contact-value">
+                  gabriel.piske07@gmail.com
+                </a>
               </div>
-              <div class="c-item">
-                <i class="bx bx-map"></i>
-                <span>Timbó - Santa Catarina, Brasil</span>
-              </div>
+              <button type="button" id="copy-email-btn" class="copy-btn">
+                Copiar
+              </button>
             </div>
+
+            <a
+              href="https://www.linkedin.com/in/gabriel-piske/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-row"
+            >
+              <div>
+                <span class="contact-type">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/gabriel-piske</span>
+              </div>
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+            <a
+              href="https://github.com/gabrielpiske"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-row"
+            >
+              <div>
+                <span class="contact-type">GitHub</span>
+                <span class="contact-value">github.com/gabrielpiske</span>
+              </div>
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+            <a
+              href="https://lattes.cnpq.br/8732342640688124"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-row"
+            >
+              <div>
+                <span class="contact-type">Currículo Lattes</span>
+                <span class="contact-value">lattes.cnpq.br/8732342640688124</span>
+              </div>
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+
+            
           </div>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <p>
-        &copy; 2026 Todos os direitos reservados. Desenvolvido por Gabriel
-        Piske.
-      </p>
+      <div class="container footer-inner">
+        <span>&copy; 2026 Gabriel Schweder Piske.</span>
+        <span>Docência &middot; Engenharia de Software &middot; Sistemas Educacionais</span>
+      </div>
     </footer>
 
     <div id="top-link" class="hide-top">
-      <a href="#home" aria-label="Voltar para o topo"
-        ><i class="bx bx-up-arrow-alt"></i
-      ></a>
+      <a href="#home" aria-label="Voltar para o topo">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
     </div>
 
     <script src="js/script.js"></script>
